@@ -15,6 +15,9 @@
     chain-length = <66>;
 };
 
+&left_encoder { resolution = <2>; };
+&right_encoder { resolution = <2>; };
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -34,7 +37,8 @@
                         &kp LALT &kp LGUI &mo 1  &kp SPACE  &kp RET  &mo 2  &kp BSPC &kp RGUI
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_cp C_VOL_DN C_VOL_UP &inc_dec_cp C_BRI_DN C_BRI_UP>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp LC(LEFT) LC(RIGHT)>;
         };
 
         lower_layer {
