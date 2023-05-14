@@ -45,14 +45,14 @@
 // ------------------------------------------------------------------------------------------------------------
 // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   | RGBON| RGBOFF|       |      |       |       |
 // |       |  !  |  @  |   #  |  $   |   %  |                   |      |       |       |      |       |       |
-// |  ESC  |  ^  |  &  |   *  |  (   |   )  |                   |      |  <-   |  ^    |  v   |   ->  |       |
-// |       |     |  [  |   ]  |  {   |   }  |        |  |       |      |  _    |  +    |  _   |   =   |  "|"  |
+// |  ESC  |  ^  |  &  |   *  | "|"  |      |                   |  <-  |  ^    |  v    |  ->  |       |       |
+// |       |  [  |  ]  |  {   |   }  |      |        |  |       |      |  _    |  +    |  _   |   =   |  "|"  |
 //                     |      |      |      |        |  |       |      |       |       |
             bindings = <
 &bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &rgb_ug RGB_ON    &rgb_ug RGB_OFF   &trans    &trans    &trans    &trans
 &trans     &kp EXCL         &kp AT            &kp HASH          &kp DOLLAR   &kp PERCENT                  &trans    &trans    &trans          &trans    &trans    &trans
-&kp ESC    &kp CARET        &kp AMPS          &kp STAR          &kp LPAR     &kp RPAR                     &trans    &kp LEFT  &kp UP          &kp DOWN  &kp RIGHT &trans   
-&trans     &trans           &kp LBKT          &kp RBKT          &kp LBRC     &kp RBRC  &trans   &trans    &trans    &kp MINUS &kp PLUS        &kp UNDERSCORE  &kp EQUAL  &kp PIPE
+&kp ESC    &kp CARET        &kp AMPS          &kp STAR          &kp LPAR     &kp RPAR                     &kp LEFT  &kp UP    &kp DOWN        &kp RIGHT &trans    &trans   
+&trans     &kp LBKT         &kp RBKT          &kp LBRC          &kp RBRC     &trans    &trans   &trans    &trans    &kp MINUS &kp PLUS        &kp UNDERSCORE  &kp EQUAL  &kp PIPE
                                               &trans            &trans       &trans    &trans   &trans    &trans    &trans    &trans
             >;
 
