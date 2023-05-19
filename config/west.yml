@@ -6,7 +6,7 @@ manifest:
       url-base: https://github.com/tklzg
   projects:
     - name: zmk
-      remote: zklzg
+      remote: tklzg
       revision: encoders
       import: app/west.yml
   self:
